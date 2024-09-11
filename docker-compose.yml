@@ -5,6 +5,8 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: workers-db
+    ports:
+      - "5432:5432"
   service:
     build: .
     ports:
